@@ -2,14 +2,17 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <!-- <meta description=""> /!\ less used - used to be for seo (référencement)-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formation HTML5 CSS3</title>
-    <!-- Ici :
-        - liens CSS
-        - script JS -->
-    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Commentaire en HTML -->
+    <!--
+        Ici on va aussi :
+            - lien CSS
+            - appel des fichiers JS
+    -->
+    <link rel="stylesheet" href="./css/style.css" media="screen" />
+    <link rel="stylesheet" href="./css/print.css" media="print" />
     <style>
         .rouge-gras {
             color: red;
@@ -19,9 +22,9 @@
 </head>
 
 <body>
-    <header>
+    <header id="top">
         <h1>Formation HTML5 - CSS3 - RWD</h1>
-    </header id="top">
+    </header>
     <nav>
         <ul>
             <li><a href="./index.html">Accueil</a></li>
@@ -35,59 +38,36 @@
         </ul>
     </nav>
     <main>
-        <!-- Unique id here for carousel because it's the only one on the website -->
         <section id="carousel">
+
         </section>
         <section>
             <article>
                 <header>
-                    <h2>Balises de type paragraphe</h2>
+                    <h2>Les balises de type paragraphe</h2>
                 </header>
                 <main>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condimentum ligula at
-                        posuere egestas. Sed lacus nunc, malesuada aliquet egestas id, pharetra ut lectus. Curabitur
-                        porttitor dictum rhoncus. In nec ex finibus, lacinia dui at, elementum lectus. Aliquam tempor
-                        neque ac volutpat ultrices. Vivamus id tempor ex, sed suscipit nibh. Praesent rhoncus dui nec
-                        lectus fermentum, consequat tristique risus tempus. Mauris viverra, ipsum in scelerisque semper,
-                        ex ligula commodo ipsum, eget interdum tortor mi in ligula. Donec lacus leo, mattis et urna sed,
-                        fringilla tincidunt mauris. Aliquam augue est, elementum sit amet lectus at, dignissim tincidunt
-                        quam. Nullam molestie orci sit amet sem venenatis, ac feugiat mi tincidunt. Integer sed ligula
-                        ligula. Sed massa ante, eleifend non enim vel, tincidunt vehicula odio. In eu feugiat odio, ac
-                        vehicula arcu.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus consectetur deleniti corrupti
+                        inventore iure, fugit aut perspiciatis voluptatem, non, est tempora cumque magni ipsam
+                        repellendus unde possimus tenetur ad iusto?
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis excepturi vel eius, facilis
+                        aut commodi fugit voluptatem accusamus at sequi expedita impedit, assumenda saepe necessitatibus
+                        libero eaque ratione doloremque ipsum.
                     </p>
                     <pre>
-Lorem ipsum dolor sit amet, consectetur 
-adipiscing elit. 
-Suspendisse condimentum ligula at
-posuere egestas. Sed lacus nunc, 
-malesuada aliquet egestas id, 
-pharetra ut lectus. Curabitur
-porttitor dictum rhoncus.
+Lorem ipsum dolor sit amet 
+consectetur adipisicing elit. 
+Nihil voluptatem hic at error 
+repellat reiciendis nesciunt 
+aspernatur ipsum quisquam! 
+Ratione quidem sed quis 
+temporibus ea distinctio, 
+fugit saepe vero sit?
                     </pre>
-                    <p>
-                        Lorem ipsum dolor, <code>sit amet consectetur adipisicing elit.</code> Vero labore deleniti ea
-                        aliquam quia
-                        officia obcaecati dolorem quibusdam facere accusantium ab, cum quaerat eius nulla quae
-                        reiciendis voluptate molestiae quas? Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Suspendisse condimentum ligula at
-                        posuere egestas. Sed lacus nunc, malesuada aliquet egestas id, pharetra ut lectus. Curabitur
-                        porttitor dictum rhoncus. In nec ex finibus, lacinia dui at, elementum lectus. Aliquam tempor
-                        neque ac volutpat ultrices. Vivamus id tempor ex, sed suscipit nibh. Praesent rhoncus dui nec
-                        lectus fermentum, consequat tristique risus tempus. Mauris viverra, ipsum in scelerisque semper,
-                        ex ligula commodo ipsum, eget interdum tortor mi in ligula. Donec lacus leo, mattis et urna sed,
-                        fringilla tincidunt mauris. Aliquam augue est, elementum sit amet lectus at, dignissim tincidunt
-                        quam. Nullam molestie orci sit amet sem venenatis, ac feugiat mi tincidunt. Integer sed ligula
-                        ligula. Sed massa ante, eleifend non enim vel, tincidunt vehicula odio. In eu feugiat odio, ac
-                        vehicula arcu.
-                    <blockquote>
-                        <q>Sed massa ante, eleifend non enim vel, tincidunt vehicula odio. In eu feugiat odio, ac
-                            vehicula arcu.</q>
-                    </blockquote>
-                    </p>
                 </main>
                 <footer>
-                    <a href="./article.html" title="lien vers l'article">
+                    <a href="./article.html" title="Lien vers l'article">
                         <button>
                             Lire la suite
                         </button>
@@ -96,32 +76,67 @@ porttitor dictum rhoncus.
             </article>
             <article>
                 <header>
-                    <h2>Balises de texte</h2>
+                    <h2>Les balises de type paragraphe</h2>
                 </header>
                 <main>
-                    <p>Quelques balises pour changer l'apparence du texte.
+                    <p>
+                        Lorem, ipsum dolor <code>sit amet consectetur adipisicing elit</code>. Saepe eius animi pariatur
+                        alias temporibus quibusdam quia veritatis tempore sint error dolores fuga, accusamus dolorem
+                        magnam debitis. Corrupti porro ipsam maxime!
+                    </p>
+                    <p>
+                        <code>
+                            &lt;b&gt;&lt;/b&gt; &eacute; &Eacute; &ocirc; &Ocirc;
+                        </code>
+                    </p>
+                    <p>
+                        &copy; &trade;
+                    </p>
+                    <blockquote>
+                        <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, fugiat facere facilis
+                            dignissimos, quasi odio cupiditate quam vel sint voluptatem illo labore delectus nobis, est
+                            aperiam. Maiores harum esse amet!
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, beatae aspernatur
+                            repellendus ullam animi aliquam labore voluptatem nam voluptatibus corporis impedit at
+                            dolorum esse facilis expedita voluptas repellat molestiae ad?</q><br />
+                        <cite>Jules César</cite>
+                    </blockquote>
+                </main>
+                <footer>
+                    <a href="./article.html" title="Lien vers l'article">
+                        <button>
+                            Lire la suite
+                        </button>
+                    </a>
+                </footer>
+            </article>
+            <article>
+                <header>
+                    <h2>Quelques balises sur le texte</h2>
+                </header>
+                <main>
+                    <p>
+                        IL existe quelques balises pour changer l'apparence du texte.
                         En <b>gras</b> (b ou bold) qui n'a pas d'influence sur le SEO,
-                        en revanche, la balise <strong>strong</strong> va apporter au référencement
-                        (une seule utilisation de cette balise par terme à mettre en avant).
+                        en revanche, la balise <strong>strong</strong>.
                     </p>
                     <p>
-                        De même pour l'<i>italique</i> sans influence SEO, alors que l'<em>emphase</em>
-                        sera pris en compte pour le référencement.
+                        De même pour l'<i>italique</i> sans influence SEO, alors que l'<em>emphase</em>.
                     </p>
                     <p>
-                        La balise <font color="#ff0000" size="6" face="Arial">font</font> est décommissionnée (à ne plus
-                        utiliser).
-                        Désormais, on utilise la balise <span class="rouge-gras">span</span> auquel on ajoute du style
-                        (avec une ou plusieurs class).
+                        La balise font <font color="#ff0000" size="6" face="Arial">texte</font> n'est plus utilisée,
+                        à la place on utilise la balise span <span class="rouge-gras">ma span</span> associée à une ou
+                        plusieurs classes.
                     </p>
                     <p>
-                        On peut :
-                        <s>biffer</s> (rayer du texte), <u>souligner</u> (ne pas utiliser car peut être pris pour un
-                        lien), <mark>marquer</mark>, H<sub>2</sub>SO<sub>4</sub><sup>2-</sup>,
+                        On peut : <s>biffer</s>, <u>souligner</u>, <mark>Marquer</mark>.
+                    </p>
+                    <p>
+                        H<sub>2</sub>SO<sub>4</sub><sup>2-</sup>
                     </p>
                 </main>
                 <footer>
-                    <a href="./article.html" title="lien vers l'article">
+                    <a href="./article.html" title="Lien vers l'article">
                         <button>
                             Lire la suite
                         </button>
@@ -136,21 +151,28 @@ porttitor dictum rhoncus.
                 </header>
                 <main>
                     <p>
-                        Par défaut, on utilise la balise img.
-                        <img src="./images/city-black-n-white.jpg" alt="Image d'une ville en noir et blanc">
+                        Par défaut on utilise la balise img
                     </p>
+                    <img src="./images/city-black-n-white.png" alt="Dessin d'une ville en noir et blanc" />
                     <p>
-                        Encadrement sémantique des documents : la balise figure.
-                        <!-- use for good seo -->
-                    <figure>
-                        <figcaption>Tardis from Doctor Who</figcaption>
-                        <img src="./images/tardis.jpg" alt="Tardis de la série Doctor Who">
-                    </figure>
+                        Avec HTML5, il existe une balise faîte pour encadrer sémantiquement des documents, ou média,
+                        avec l'option d'y adjoindre une légende, la balise figure.
                     </p>
-
+                    <figure>
+                        <img src="./images/cropped-wallhaven-fallout-4-01-3-1536x922.jpg" alt="wallpaper fallout 4" />
+                        <figcaption>
+                            Wallpaper fallout 4
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="./images/Batman-The-animated-serie.jpg" alt="wallpaper fallout 4" />
+                        <figcaption>
+                            Wallpaper fallout 4
+                        </figcaption>
+                    </figure>
                 </main>
                 <footer>
-                    <a href="./article.html" title="lien vers l'article">
+                    <a href="./article.html" title="Lien vers l'article">
                         <button>
                             Lire la suite
                         </button>
@@ -159,28 +181,33 @@ porttitor dictum rhoncus.
             </article>
             <article>
                 <header>
-                    <h2>Les problème courants en CSS</h2>
+                    <h2>Les problèmes courants en CSS</h2>
                 </header>
                 <main>
-                    <p>La taille des éléments est calculée par défaut sur le contenu des éléments.
-                        Si un paragraphe possède une bordure de 1px, une marge intérieur (padding) de 5px,
-                        et une largeur de 200px, la "boite" affichée fera 212px de large, bordure comprise.
+                    <p>
+                        Les tailles des éléments sont par défaut calculés sur le contenu des éléments.
+                        Si un paragraphe possède une bordure de 1px, une marge intérieure (padding) de 5px,
+                        et une largeur de 200px, la "boîte" affichée fera 212px de large bordures comprises.
                     </p>
                     <p>
-                        La définition du box-sizing est 'content-box'. Si on veut la taille calculée depuis les
-                        bordures,
-                        on doit la forcer à border-box.
+                        La définition par défaut du calcul "box-sizing" est "content-box", si on veut la taille calculée
+                        depuis les bordures, on doit la forcer à "border-box"
                     </p>
-                    <div class="text-content-box">
-                        <div class="moitie">mot</div>
-                        <div class="moitie">mot</div>
+                    <div class="test-content-box">
+                        <div class="moitie">az</div>
+                        <div class="moitie">az</div>
                     </div>
-                    <div class="text-border-box">
-                        <div class="moitie">mot</div>
-                        <div class="moitie">mot</div>
+                    <div class="test-border-box">
+                        <div class="moitie">az</div>
+                        <div class="moitie">az</div>
                     </div>
                     <p>
-                    Cadratin
+                        Les tailles calculées : si vous voulez utiliser
+                        des cadratin (em), il est
+                        plus sûr d'utiliser les cadratins racine (rem)
+                        car il sont toujouts calculés
+                        par rapport au cadratin racine du user-agent (le style CSS du navigateur)
+                        et non pas le cadratin calculé du conteneur
                     </p>
                     <div class="deuxEm">
                         deux em
@@ -196,7 +223,60 @@ porttitor dictum rhoncus.
                     </div>
                 </main>
                 <footer>
-                    <a href="./article.html" title="lien vers l'article">
+                    <a href="./article.html" title="Lien vers l'article">
+                        <button>
+                            Lire la suite
+                        </button>
+                    </a>
+                </footer>
+            </article>
+        </section>
+        <section>
+            <article>
+                <header>
+                    <h2>Les problèmes courants en CSS</h2>
+                </header>
+                <main>
+                    <p>
+                        Les tailles des éléments sont par défaut calculés sur le contenu des éléments.
+                        Si un paragraphe possède une bordure de 1px, une marge intérieure (padding) de 5px,
+                        et une largeur de 200px, la "boîte" affichée fera 212px de large bordures comprises.
+                    </p>
+                    <p>
+                        La définition par défaut du calcul "box-sizing" est "content-box", si on veut la taille calculée
+                        depuis les bordures, on doit la forcer à "border-box"
+                    </p>
+                    <div class="test-content-box">
+                        <div class="moitie">az</div>
+                        <div class="moitie">az</div>
+                    </div>
+                    <div class="test-border-box">
+                        <div class="moitie">az</div>
+                        <div class="moitie">az</div>
+                    </div>
+                    <p>
+                        Les tailles calculées : si vous voulez utiliser
+                        des cadratin (em), il est
+                        plus sûr d'utiliser les cadratins racine (rem)
+                        car il sont toujouts calculés
+                        par rapport au cadratin racine du user-agent (le style CSS du navigateur)
+                        et non pas le cadratin calculé du conteneur
+                    </p>
+                    <div class="deuxEm">
+                        deux em
+                        <div class="deuxEm">
+                            deux em
+                        </div>
+                    </div>
+                    <div class="deuxRem">
+                        deux rem
+                        <div class="deuxRem">
+                            deux rem
+                        </div>
+                    </div>
+                </main>
+                <footer>
+                    <a href="./article.html" title="Lien vers l'article">
                         <button>
                             Lire la suite
                         </button>
@@ -237,11 +317,11 @@ porttitor dictum rhoncus.
             <h4>Autres liens</h4>
             <nav>
                 <ul>
-                    <li><a href="#">Lien 1</a></li>
-                    <li><a href="#">Lien 2</a></li>
-                    <li><a href="#">Lien 3</a></li>
-                    <li><a href="#">Lien 4</a></li>
-                    <li><a href="#">Lien 5</a></li>
+                    <li><a href="#">bla bli blu</a></li>
+                    <li><a href="#">bla bli blu</a></li>
+                    <li><a href="#">bla bli blu</a></li>
+                    <li><a href="#">bla bli blu</a></li>
+                    <li><a href="#">bla bli blu</a></li>
                 </ul>
             </nav>
         </div>
