@@ -9,22 +9,243 @@
     <!-- Ici :
         - liens CSS
         - script JS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <style>
+        .rouge-gras {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
 </head>
 
 <body>
     <header>
         <h1>Formation HTML5 - CSS3 - RWD</h1>
-    </header>
+    </header id="top">
     <nav>
-        <ul></ul>
-        <li><a href="./index.html"></a></li>
-        <li><a href="./article.html"></a></li>
-        <li><a href="./contact.html"></a></li>
-        <li><a href="./media.html"></a></li>
-        <li><a href="./animation.html"></a></li>
-        <li><a href="./trucs.html"></a></li>
-        <li><a href="./grid.html"></a></li>
-        <li><a href="./bootstrap.html"></a></li>
+        <ul>
+            <li><a href="./index.html">Accueil</a></li>
+            <li><a href="./article.html">Article</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./media.html">Media</a></li>
+            <li><a href="./animation.html">Animations CSS</a></li>
+            <li><a href="./trucs.html">Des trucs en CSS</a></li>
+            <li><a href="./grid.html">Grid CSS</a></li>
+            <li><a href="./bootstrap.html">Bootstrap</a></li>
+        </ul>
     </nav>
+    <main>
+        <!-- Unique id here for carousel because it's the only one on the website -->
+        <section id="carousel">
+        </section>
+        <section>
+            <article>
+                <header>
+                    <h2>Balises de type paragraphe</h2>
+                </header>
+                <main>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condimentum ligula at
+                        posuere egestas. Sed lacus nunc, malesuada aliquet egestas id, pharetra ut lectus. Curabitur
+                        porttitor dictum rhoncus. In nec ex finibus, lacinia dui at, elementum lectus. Aliquam tempor
+                        neque ac volutpat ultrices. Vivamus id tempor ex, sed suscipit nibh. Praesent rhoncus dui nec
+                        lectus fermentum, consequat tristique risus tempus. Mauris viverra, ipsum in scelerisque semper,
+                        ex ligula commodo ipsum, eget interdum tortor mi in ligula. Donec lacus leo, mattis et urna sed,
+                        fringilla tincidunt mauris. Aliquam augue est, elementum sit amet lectus at, dignissim tincidunt
+                        quam. Nullam molestie orci sit amet sem venenatis, ac feugiat mi tincidunt. Integer sed ligula
+                        ligula. Sed massa ante, eleifend non enim vel, tincidunt vehicula odio. In eu feugiat odio, ac
+                        vehicula arcu.
+                    </p>
+                    <pre>
+Lorem ipsum dolor sit amet, consectetur 
+adipiscing elit. 
+Suspendisse condimentum ligula at
+posuere egestas. Sed lacus nunc, 
+malesuada aliquet egestas id, 
+pharetra ut lectus. Curabitur
+porttitor dictum rhoncus.
+                    </pre>
+                    <p>
+                        Lorem ipsum dolor, <code>sit amet consectetur adipisicing elit.</code> Vero labore deleniti ea
+                        aliquam quia
+                        officia obcaecati dolorem quibusdam facere accusantium ab, cum quaerat eius nulla quae
+                        reiciendis voluptate molestiae quas? Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Suspendisse condimentum ligula at
+                        posuere egestas. Sed lacus nunc, malesuada aliquet egestas id, pharetra ut lectus. Curabitur
+                        porttitor dictum rhoncus. In nec ex finibus, lacinia dui at, elementum lectus. Aliquam tempor
+                        neque ac volutpat ultrices. Vivamus id tempor ex, sed suscipit nibh. Praesent rhoncus dui nec
+                        lectus fermentum, consequat tristique risus tempus. Mauris viverra, ipsum in scelerisque semper,
+                        ex ligula commodo ipsum, eget interdum tortor mi in ligula. Donec lacus leo, mattis et urna sed,
+                        fringilla tincidunt mauris. Aliquam augue est, elementum sit amet lectus at, dignissim tincidunt
+                        quam. Nullam molestie orci sit amet sem venenatis, ac feugiat mi tincidunt. Integer sed ligula
+                        ligula. Sed massa ante, eleifend non enim vel, tincidunt vehicula odio. In eu feugiat odio, ac
+                        vehicula arcu.
+                    <blockquote>
+                        <q>Sed massa ante, eleifend non enim vel, tincidunt vehicula odio. In eu feugiat odio, ac
+                            vehicula arcu.</q>
+                    </blockquote>
+                    </p>
+                </main>
+                <footer>
+                    <a href="./article.html" title="lien vers l'article">
+                        <button>
+                            Lire la suite
+                        </button>
+                    </a>
+                </footer>
+            </article>
+            <article>
+                <header>
+                    <h2>Balises de texte</h2>
+                </header>
+                <main>
+                    <p>Quelques balises pour changer l'apparence du texte.
+                        En <b>gras</b> (b ou bold) qui n'a pas d'influence sur le SEO,
+                        en revanche, la balise <strong>strong</strong> va apporter au référencement
+                        (une seule utilisation de cette balise par terme à mettre en avant).
+                    </p>
+                    <p>
+                        De même pour l'<i>italique</i> sans influence SEO, alors que l'<em>emphase</em>
+                        sera pris en compte pour le référencement.
+                    </p>
+                    <p>
+                        La balise <font color="#ff0000" size="6" face="Arial">font</font> est décommissionnée (à ne plus
+                        utiliser).
+                        Désormais, on utilise la balise <span class="rouge-gras">span</span> auquel on ajoute du style
+                        (avec une ou plusieurs class).
+                    </p>
+                    <p>
+                        On peut :
+                        <s>biffer</s> (rayer du texte), <u>souligner</u> (ne pas utiliser car peut être pris pour un
+                        lien), <mark>marquer</mark>, H<sub>2</sub>SO<sub>4</sub><sup>2-</sup>,
+                    </p>
+                </main>
+                <footer>
+                    <a href="./article.html" title="lien vers l'article">
+                        <button>
+                            Lire la suite
+                        </button>
+                    </a>
+                </footer>
+            </article>
+        </section>
+        <section>
+            <article>
+                <header>
+                    <h2>Les images</h2>
+                </header>
+                <main>
+                    <p>
+                        Par défaut, on utilise la balise img.
+                        <img src="./images/city-black-n-white.jpg" alt="Image d'une ville en noir et blanc">
+                    </p>
+                    <p>
+                        Encadrement sémantique des documents : la balise figure.
+                        <!-- use for good seo -->
+                    <figure>
+                        <figcaption>Tardis from Doctor Who</figcaption>
+                        <img src="./images/tardis.jpg" alt="Tardis de la série Doctor Who">
+                    </figure>
+                    </p>
+
+                </main>
+                <footer>
+                    <a href="./article.html" title="lien vers l'article">
+                        <button>
+                            Lire la suite
+                        </button>
+                    </a>
+                </footer>
+            </article>
+            <article>
+                <header>
+                    <h2>Les problème courants en CSS</h2>
+                </header>
+                <main>
+                    <p>La taille des éléments est calculée par défaut sur le contenu des éléments.
+                        Si un paragraphe possède une bordure de 1px, une marge intérieur (padding) de 5px,
+                        et une largeur de 200px, la "boite" affichée fera 212px de large, bordure comprise.
+                    </p>
+                    <p>
+                        La définition du box-sizing est 'content-box'. Si on veut la taille calculée depuis les
+                        bordures,
+                        on doit la forcer à border-box.
+                    </p>
+                    <div class="text-content-box">
+                        <div class="moitie">mot</div>
+                        <div class="moitie">mot</div>
+                    </div>
+                    <div class="text-border-box">
+                        <div class="moitie">mot</div>
+                        <div class="moitie">mot</div>
+                    </div>
+                    <p>
+                    Cadratin
+                    </p>
+                    <div class="deuxEm">
+                        deux em
+                        <div class="deuxEm">
+                            deux em
+                        </div>
+                    </div>
+                    <div class="deuxRem">
+                        deux rem
+                        <div class="deuxRem">
+                            deux rem
+                        </div>
+                    </div>
+                </main>
+                <footer>
+                    <a href="./article.html" title="lien vers l'article">
+                        <button>
+                            Lire la suite
+                        </button>
+                    </a>
+                </footer>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <h4>Sitemap</h4>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Accueil</a></li>
+                    <li><a href="./article.html">Article</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./media.html">Media</a></li>
+                    <li><a href="./animation.html">Animations CSS</a></li>
+                    <li><a href="./trucs.html">Des trucs en CSS</a></li>
+                    <li><a href="./grid.html">Grid CSS</a></li>
+                    <li><a href="./bootstrap.html">Bootstrap</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <h4>Liens institutionnels</h4>
+            <nav>
+                <ul>
+                    <li><a href="#">CGV</a></li>
+                    <li><a href="#">CGU</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">Qui sommes-nous</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <h4>Autres liens</h4>
+            <nav>
+                <ul>
+                    <li><a href="#">Lien 1</a></li>
+                    <li><a href="#">Lien 2</a></li>
+                    <li><a href="#">Lien 3</a></li>
+                    <li><a href="#">Lien 4</a></li>
+                    <li><a href="#">Lien 5</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
 </body>
+
 </html>
