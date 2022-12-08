@@ -2,31 +2,166 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <!-- <meta description=""> /!\ less used - used to be for seo (référencement)-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formation HTML5 CSS3</title>
-    <!-- Ici :
-        - liens CSS
-        - script JS -->
-</head>
+    <!-- Commentaire en HTML -->
+    <!--
+        Ici on va aussi :
+            - lien CSS
+            - appel des fichiers JS
+    -->
+
+    <!--  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <script src="./js/swiper-bundle.js"></script>
+    <link rel="stylesheet" href="./css/swiper-bundle.css" media="screen">
+    <link rel="stylesheet" href="./css/style.css" media="screen" />
+    <link rel="stylesheet" href="./css/print.css" media="print" />
+    <link rel="stylesheet" href="./css/animation.css"/>
 
 <body>
-
-    <header>
-        <h1>FOrmation HTML5 - CSS3 - RWD</h1>
+    <header id="top">
+        <h1>Formation HTML5 - CSS3 - RWD</h1>
     </header>
     <nav>
-        <ul></ul>
-        <li><a href="./index.html">Accueil</a></li>
-        <li><a href="./article.html">Article</a></li>
-        <li><a href="./contact.html">Contact</a></li>
-        <li><a href="./media.html">Media</a></li>
-        <li><a href="./animation.html">Animations CSS</a></li>
-        <li><a href="./trucs.html">Des trucs en CSS</a></li>
-        <li><a href="./grid.html">Grid CSS</a></li>
-        <li><a href="./bootstrap.html">Bootstrap</a></li>
+        <ul>
+            <li><a href="./index.html">Accueil</a></li>
+            <li><a href="./article.html">Article</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./media.html">Media</a></li>
+            <li><a href="./animation.html">Animations CSS</a></li>
+            <li><a href="./trucs.html">Des trucs en CSS</a></li>
+            <li><a href="./grid.html">Grid CSS</a></li>
+            <li><a href="./bootstrap.html">Bootstrap</a></li>
+        </ul>
     </nav>
+    <main>
+        <section>
+            <article class="article-direction">
+
+                <main class="main-article">
+                    <header>
+                        <h2>Madeline Miller</h2>
+                    </header>
+
+                    <img class="translation madeline-miller-img" src="./images/madeline_miller.jpg" alt="photo de Madeline Miller">
+
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque minima adipisci, aut officiis
+                        architecto quod, ut doloremque nulla amet voluptatum iste esse. Temporibus accusamus, dolor
+                        neque consequuntur animi soluta quos. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Ut ipsa similique aspernatur, facilis aperiam in nulla magnam ducimus esse, voluptatum sed? Eum
+                        nostrum minus asperiores sequi ad a accusantium laborum.</p>
+
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque minima adipisci, aut officiis
+                        architecto quod, ut doloremque nulla amet voluptatum iste esse. Temporibus accusamus, dolor
+                        neque consequuntur animi soluta quos. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Ut ipsa similique aspernatur, facilis aperiam in nulla magnam ducimus esse, voluptatum sed? Eum
+                        nostrum minus asperiores sequi ad a accusantium laborum.</p>
+                    <img class="couverture-livre-img scale" src="./images/Le-Chant-d-Achille.jpg"
+                        alt="couverture livre le chant d'achille">
+
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque minima adipisci, aut officiis
+                        architecto quod, ut doloremque nulla amet voluptatum iste esse. Temporibus accusamus, dolor
+                        neque consequuntur animi soluta quos. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Ut ipsa similique aspernatur, facilis aperiam in nulla magnam ducimus esse, voluptatum sed? Eum
+                        nostrum minus asperiores sequi ad a accusantium laborum.</p>
+
+                </main>
+                <div class="contenu">
+                    <aside class="item-aside-a">
+                        <header>
+                            <h3>Novels</h3>
+                        </header>
+                        <ul>
+                            <li>Song of Achilles</li>
+                            <li>Circe</li>
+                            <li>Galatea</li>
+                            <li>Persephone</li>
+                        </ul>
+                    </aside>
+                    <aside class="item-aside-b">
+                        <header>
+                            <h3>Awards</h3>
+                        </header>
+                        <ul>
+                            <li>Chautauqua Prize</li>
+                            <li>Gaylactic Spectrum Award</li>
+                            <li>Orange Prize for Fiction</li>
+                            <li>Women's Prize for Fiction</li>
+                        </ul>
+                    </aside>
+                    <aside class="item-aside-c">
+                        <header>
+                            <h3>Reviews</h3>
+                        </header>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione vero quos iure blanditiis.
+                            Magnam consectetur fugiat placeat repellat. Dolor alias at fugiat sint hic pariatur itaque
+                            dolores temporibus, nam in? </p>
+                    </aside>
+                    <aside  class="item-aside-d">
+                        <header>
+                            <h3>Informations</h3>
+                        </header>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione vero quos iure blanditiis.
+                            Magnam consectetur fugiat placeat repellat. Dolor alias at fugiat sint hic pariatur itaque
+                            dolores temporibus, nam in? </p>
+                    </aside>
+                    <aside  class="item-aside-e">
+                        <header>
+                            <h3>Author's note</h3>
+                        </header>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione vero quos iure blanditiis.
+                            Magnam consectetur fugiat placeat repellat. Dolor alias at fugiat sint hic pariatur itaque
+                            dolores temporibus, nam in? </p>
+                    </aside>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <div>
+                <h4>Sitemap</h4>
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">Accueil</a></li>
+                        <li><a href="./article.html">Article</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="./media.html">Media</a></li>
+                        <li><a href="./animation.html">Animations CSS</a></li>
+                        <li><a href="./trucs.html">Des trucs en CSS</a></li>
+                        <li><a href="./grid.html">Grid CSS</a></li>
+                        <li><a href="./bootstrap.html">Bootstrap</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <h4>Liens institutionnels</h4>
+                <nav>
+                    <ul>
+                        <li><a href="#">CGV</a></li>
+                        <li><a href="#">CGU</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">BLOG</a></li>
+                        <li><a href="#">Qui sommes-nous</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <h4>Autres liens</h4>
+                <nav>
+                    <ul>
+                        <li><a href="#">bla bli blu</a></li>
+                        <li><a href="#">bla bli blu</a></li>
+                        <li><a href="#">bla bli blu</a></li>
+                        <li><a href="#">bla bli blu</a></li>
+                        <li><a href="#">bla bli blu</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </footer>
 </body>
 
 </html>
